@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 
 # loading the saved model
-loaded_model = pickle.load(open('C:/Users/dizda/risk/deploy/rf_class.sav', 'rb'))
+loaded_model = pickle.load(open('rf_class.sav', 'rb'))
 
 
 # creating a function for Prediction
