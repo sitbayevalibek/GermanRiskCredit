@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 import streamlit as st
-# import sklearn
+import sklearn
 # loading the saved model
 loaded_model = pickle.load(open('rf_class.sav', 'rb'))
 
