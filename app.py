@@ -22,7 +22,7 @@ def diabetes_prediction(input_data):
 def main():
     # giving a title
     st.title('Risk Credit Prediction Web App')
-    st.title('Enter numeric data only!. Use examples.')
+    st.markdown('<h1 style="font-size:large;">Enter numeric data only!. Use examples.</h1>', unsafe_allow_html=True)
 
     # getting the input data from the user
     Age = st.text_input('Age (example >>>	19-75)')
