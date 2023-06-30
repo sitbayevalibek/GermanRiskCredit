@@ -43,7 +43,7 @@ def main():
         risk = diabetes_prediction([Age, Sex, Job, Housing, Saving_accounts, Checking_account, Credit_amount, Duration, Purpose])
 
     with st.container():
-        st.success(churn)
+        st.success(risk)
         st.markdown('<h1 style="font-size:large;">My Social Links</h1>', unsafe_allow_html=True)
         st.markdown('[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sitbayevalibek)')
         st.markdown('[![GitHub](https://img.shields.io/badge/GitHub-%2312100E.svg?&style=flat-square&logo=github&logoColor=white)](https://github.com/sitbayevalibek)')
