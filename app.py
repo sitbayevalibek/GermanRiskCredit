@@ -7,7 +7,7 @@ loaded_model = pickle.load(open('rf_class.sav', 'rb'))
 
 
 # creating a function for Prediction
-def diabetes_prediction(input_data):
+def prediction(input_data):
     # changing the input_data to numpy array
     input_data_as_numpy_array = np.asarray(input_data)
     # reshape the array as we are predicting for one instance
@@ -40,7 +40,7 @@ def main():
 
     # creating a button for Prediction
     if st.button('Submit'):
-        risk = diabetes_prediction([Age, Sex, Job, Housing, Saving_accounts, Checking_account, Credit_amount, Duration, Purpose])
+        risk = prediction([Age, Sex, Job, Housing, Saving_accounts, Checking_account, Credit_amount, Duration, Purpose])
 
     with st.container():
         st.success(risk)
