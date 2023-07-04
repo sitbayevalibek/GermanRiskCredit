@@ -6,7 +6,7 @@ import sklearn
 loaded_model = pickle.load(open('rf_class.sav', 'rb'))
 
 
-# creating a function for Prediction
+# creating a function for Prediction.
 def prediction(input_data):
     # changing the input_data to numpy array
     input_data_as_numpy_array = np.asarray(input_data)
