@@ -41,9 +41,12 @@ def main():
     # creating a button for Prediction
     if st.button('Submit'):
         risk = prediction([Age, Sex, Job, Housing, Saving_accounts, Checking_account, Credit_amount, Duration, Purpose])
-
+        if risk == 'Bad':
+            st.error("No credit will be given")
+        else:
+            st.success(risk)
     with st.container():
-        st.success(risk)
+        
         st.markdown('<h1 style="font-size:large;">My Social Links</h1>', unsafe_allow_html=True)
         st.markdown('[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sitbayevalibek)')
         st.markdown('[![GitHub](https://img.shields.io/badge/GitHub-%2312100E.svg?&style=flat-square&logo=github&logoColor=white)](https://github.com/sitbayevalibek)')
